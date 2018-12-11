@@ -6,7 +6,7 @@ const app = express();
 
 
 //connect to mlab with cred
-
+mongoose.connect('mongodb://anna2020:abc123@ds127843.mlab.com:27843/gql-ninja' , { useNewUrlParser: true });﻿
 mongoose.connection.once('open',()=>{
     console.log('connected to db!');
 })
